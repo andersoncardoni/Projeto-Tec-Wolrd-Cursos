@@ -1,0 +1,1008 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+}
+
+body div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+body div img {
+    width: 80px;
+
+}
+
+body #text-animation {
+    font-size: 40px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+header {
+    display: flex;
+    gap: 700px;
+    border: 2px solid rgb(86, 86, 255);
+    border-right: none;
+    border-left: none;
+    background-color: black;
+
+}
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+header .menu img {
+    height: 100px;
+
+}
+
+header .menu a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    gap: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header .menu a:hover {
+    color: blue;
+
+}
+
+header .menu img.icon {
+    width: 40px;
+    height: auto;
+
+}
+
+
+header .menu img.icon:hover {
+    width: 38px;
+
+}
+
+
+header .box-top {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .box-top img {
+    width: 40px;
+}
+
+header .box-top img:hover {
+    width: 47px;
+}
+
+
+header .box-top img.youtube {
+    width: 60px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+header .box-top img.youtube:hover {
+    width: 68px;
+}
+
+
+
+
+section#slider {
+    width: 100%;
+    height: 300px;
+    position: relatives;
+    margin-top: 10px;
+}
+
+
+section#slider img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    opacity: 0;
+    transition: opacity 800ms;
+}
+
+section#slider img.selected {
+    opacity: 1;
+}
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    background: linear-gradient(180deg, rgba(55, 146, 255, 0.6783088235294117) 0%, rgba(255, 255, 255, 0) 12%);
+}
+
+
+article h2 {
+    font-size: 40px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 40px;
+
+}
+
+article #columnscourses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
+
+}
+
+article #columnscourses div {
+    display: grid;
+    justify-items: center;
+    border-radius: 20px;
+    width: 500px;
+    height: 275px;
+    border: 3px solid black;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    background: linear-gradient(90deg, rgba(55, 146, 255, 0.6783088235294117) 0%, rgba(255, 255, 255, 0.5018382352941176) 4%, rgba(255, 255, 255, 0.4962359943977591) 95%, rgba(58, 124, 199, 0.700717787114846) 100%);
+}
+
+article #columnscourses div p {
+    margin: 15px;
+}
+
+article #columnscourses div.one {
+    width: 100%;
+    font-size: 25px;
+
+}
+
+article #columnscourses div.two {
+    width: 100%;
+    font-size: 18px;
+
+}
+
+
+article #columnscourses div.three {
+    width: 100%;
+    font-size: 22px;
+
+}
+
+article #inscription {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+article #inscription img {
+    width: 80px;
+}
+
+article #inscription p {
+    font-size: 40px;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+main {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 600px;
+    gap: 80px;
+    border: 2px solid rgb(86, 86, 255);
+    border-left: none;
+    border-right: none;
+
+}
+
+main .rooms {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.747);
+    border-radius: 40px;
+    width: 1350px;
+    height: 400px;
+}
+
+main .rooms img {
+    border: 3px solid rgb(0, 46, 253);
+    border-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+main h3 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main .text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+main .rooms::before,
+main .rooms::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: linear-gradient(45deg, rgba(55, 146, 255, 0.6783088235294117), blue, rgba(55, 146, 255, 0.6783088235294117), blue);
+    background-size: 300%;
+    border-radius: 30px;
+    animation: Animarborda 8s linear alternate infinite;
+}
+
+
+
+@keyframes Animarborda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+
+main .rooms::after {
+    filter: blur(50px);
+}
+
+
+
+
+section.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 450px;
+
+}
+
+section.services div {
+    display: flex;
+    background: rgba(0, 0, 0, 0.747);
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    gap: 30px;
+
+}
+
+
+
+section.services img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0);
+    height: 250px;
+}
+
+footer .q1 {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(55, 146, 255, 0.6783088235294117);
+    height: 180px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+footer .q2 img {
+    width: 50px;
+}
+
+footer h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1500px) {
+
+    header {
+        gap: 300px;
+    }
+
+    article #columnscourses div.one {
+
+        font-size: 20px;
+
+    }
+
+    article #columnscourses div.two {
+        font-size: 15px;
+
+    }
+
+
+    article #columnscourses div.three {
+        font-size: 17px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 1368px) {
+
+    main .rooms img {
+        width: 230px;
+    }
+
+    main .rooms {
+        width: 100%;
+        height: 330px;
+    }
+
+    section.services img {
+        width: 200px;
+        height: 200px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 1094px) {
+
+    header {
+        gap: 80px;
+    }
+
+    header .box-top img {
+        width: 30px;
+    }
+
+    header .box-top img:hover {
+        width: 28px;
+    }
+
+
+    header .box-top img.youtube {
+        width: 40px;
+
+    }
+
+    header .box-top img.youtube:hover {
+        width: 38px;
+    }
+
+    div #text-animation {
+        font-size: 26px;
+    }
+
+
+    article #columnscourses div.two p {
+        margin-top: 5px;
+        font-size: 14px;
+
+    }
+
+    section.services {
+        height: 200px;
+    }
+
+    section.services div {
+        height: 200px;
+    }
+
+    section.services img {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+
+    main .rooms img {
+        width: 200px;
+        height: 200px;
+    }
+
+    main .rooms {
+        width: 100%;
+        height: 300px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 934px) {
+
+    main .rooms img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main .rooms {
+        width: 100%;
+        height: 200px;
+    }
+
+    main .rooms img {
+        width: 200px;
+        height: 200px;
+    }
+
+    article #columnscourses {
+        flex-direction: column;
+    }
+
+    article #columnscourses div.two p {
+        margin-top: 5px;
+        font-size: 18px;
+
+    }
+
+    article #inscription p {
+        font-size: 30px;
+    }
+
+    main .rooms img {
+        width: 150px;
+        height: 150px;
+    }
+
+    main .rooms {
+        height: 200px;
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 799px) {
+
+    header .box-top {
+        gap: 30px;
+    }
+
+
+    header .box-top img {
+        width: 20px;
+    }
+
+    header .box-top img.youtube {
+        width: 27px;
+        margin-top: 8px;
+    }
+
+    header .menu img {
+        width: 60px;
+        height: auto;
+    }
+
+    header .menu img.icon {
+        width: 30px;
+    }
+
+    header .menu a {
+        font-size: 15px;
+    }
+
+    div #text-animation {
+        font-size: 20px;
+    }
+
+    body div img {
+        width: 50px;
+    }
+
+    article #inscription p {
+
+        font-size: 25px;
+    }
+
+    main {
+        height: 350px;
+    }
+
+    main .text h3 {
+        font-size: 25px;
+    }
+
+    main .rooms img {
+        width: 130px;
+        height: 130px;
+    }
+
+    main .rooms {
+        width: 670px;
+        height: 160px;
+    }
+
+
+    footer .q1 h1 {
+        font-size: 17px;
+
+    }
+
+
+    footer .q1 p {
+        font-size: 15px;
+
+    }
+
+
+
+}
+
+
+
+@media screen and (max-width: 712px) {
+
+    section#slider img {
+        height: 200px;
+    }
+
+    section.services img {
+        width: 120px;
+        height: 120px;
+    }
+
+    section.services {
+        height: 150px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    article #inscription img {
+        width: 40px;
+    }
+
+    main .rooms {
+        width: 620px;
+    }
+
+
+}
+
+@media screen and (max-width: 645px) {
+
+    header {
+        gap: 20px;
+    }
+
+    header .menu {
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    body #text-animation {
+        font-size: 17px;
+    }
+
+
+    article #inscription p {
+        font-size: 20px;
+    }
+
+    main .text h3 {
+        font-size: 20px;
+    }
+
+    main .text img {
+        width: 30px;
+    }
+
+    main .rooms {
+        width: 530px;
+        gap: 10px;
+    }
+
+    main .rooms img {
+        width: 120px;
+    }
+
+    section.services div {
+        gap: 10px;
+
+    }
+
+
+    footer .q1 {
+        width: 420px;
+
+    }
+
+    footer .q2 img {
+        width: 30px;
+    }
+
+
+}
+
+@media screen and (max-width: 560px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        height: 190px;
+    }
+
+    header .menu a {
+        font-size: 18px;
+    }
+
+    header .menu {
+        gap: 40px;
+        margin-bottom: 10px;
+    }
+
+    header .menu img {
+        width: 80px;
+    }
+
+    header .box-top {
+        gap: 50px;
+    }
+
+    header .box-top img {
+        width: 30px;
+
+    }
+
+    header .box-top img.youtube {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    main .rooms {
+        width: 100%;
+    }
+
+    main .rooms img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    section.services div img {
+        width: 100px;
+
+    }
+
+    article h2 {
+        font-size: 30px;
+    }
+
+    article #columnscourses {
+        width: 500px;
+    }
+
+
+    @media screen and (max-width: 530px) {
+
+        article #columnscourses {
+            width: 450px;
+        }
+
+        body div img {
+            width: 25px;
+
+        }
+    }
+
+
+
+
+    @media screen and (max-width: 485px) {
+
+
+
+        body div {
+            justify-content: left;
+            margin-left: 4px;
+        }
+
+        body #text-animation {
+            font-size: 15px;
+        }
+
+        header .box-top {
+            margin-left: 75px;
+            width: 300px;
+        }
+
+        section#slider {
+            height: 170px;
+        }
+
+        section#slider img {
+            height: 150px;
+        }
+
+        article #columnscourses div.two p {
+            font-size: 16px;
+        }
+
+        article #columnscourses {
+            margin: 0;
+            width: 410px;
+        }
+
+        main .text h3 {
+            font-size: 15px;
+        }
+
+        main .rooms {
+            margin: 0;
+        }
+
+        main .rooms img {
+            width: 80px;
+            height: 80px;
+        }
+
+
+        article #inscription p {
+            font-size: 15px;
+        }
+
+        section.services div img {
+            width: 90px;
+        }
+
+        section.services div {
+            width: 100%;
+            margin: 0;
+        }
+
+        footer .q1 {
+            width: 250px;
+        }
+
+        footer .q1 h1 {
+            margin-left: 12px;
+            font-size: 20px;
+        }
+
+        footer .q1 p {
+            margin-left: 12px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 442px) {
+
+        body #text-animation {
+            font-size: 12px;
+        }
+
+        article #columnscourses {
+            width: 380px;
+        }
+    }
+
+
+    @media screen and (max-width: 417px) {
+
+        header .box-top img {
+            width: 20px;
+        }
+
+
+        header .box-top img.youtube {
+            width: 25px;
+        }
+
+        header .box-top {
+            margin-left: 52px;
+        }
+
+        section#slider {
+            height: 110px;
+        }
+
+        section#slider img {
+            height: 100px;
+        }
+
+        article h2 {
+            font-size: 23px;
+        }
+
+        article #columnscourses {
+            width: 350px;
+        }
+
+        article #columnscourses div.two p {
+            font-size: 15px;
+        }
+
+        section.services div img {
+            width: 80px;
+
+        }
+    }
+
+
+    @media screen and (max-width: 385px) {
+
+        body div {
+            width: 320px;
+            gap: 4px;
+        }
+
+        body #text-animation {
+            font-size: 10px;
+        }
+
+        header .box-top {
+            width: 240px;
+        }
+
+        article #inscription{
+            flex-direction: column;
+            width: 280px;
+        }
+
+        article #inscription p {
+            font-size: 15px;
+        }
+
+        article #columnscourses {
+            width: 320px;
+        }
+
+        article #columnscourses div.two {
+            height: 500px;
+        }
+
+        article #columnscourses div.two p {
+            font-size: 18px;
+
+        }
+
+        main .rooms {
+            height: 120px;
+        }
+
+        main .rooms img {
+            width: 75px;
+        }
+
+        main .text h3 {
+            font-size: 15px;
+
+        }
+
+        main .text {
+            width: 300px;
+            flex-direction: column;
+        }
+
+        main .text img {
+            width: 50px;
+        }
+        
+
+        section.services div img {
+            width: 75px;
+
+        }
+
+        footer .q2 {
+            width: 210px;
+            
+        }
+    }
+
+
+    @media screen and (max-width: 361px) {
+
+    
+
+        section#slider img {
+            height: 90px;
+        }
+
+        article #columnscourses {
+            width: 300px;
+        }
+
+        section.services div {
+            gap: 5px;
+        }
+
+        section.services div img {
+            width: 75px;
+            gap: 4px;
+        }
+
+        main .rooms {
+            height: 100px;
+        }
+    
+
+        main .rooms img {
+            width: 70px;
+
+        }
+
+
+    }

@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+
+}
+
+header {
+    display: flex;
+    gap: 700px;
+    border: 2px solid rgb(86, 86, 255);
+    border-right: none;
+    border-left: none;
+    background-color: rgba(0, 0, 0, 0.589);
+
+}
+
+
+header .menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 30px;
+}
+
+header .menu img {
+    height: 100px;
+}
+
+header .menu a {
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+    gap: 10px;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+header .menu a:hover {
+    color: blue;
+
+}
+
+header .menu img.icon {
+    width: 40px;
+    height: auto;
+
+}
+
+
+header .menu img.icon:hover {
+    width: 38px;
+
+}
+
+
+
+header .box-top {
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .box-top img {
+    width: 40px;
+}
+
+header .box-top img:hover {
+    width: 47px;
+}
+
+header .box-top img.youtube {
+    width: 60px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+header .box-top img.youtube:hover {
+    width: 68px;
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+
+}
+
+main .box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 600px;
+    margin: 30px;
+    gap: 30px;
+
+
+}
+
+
+main button.contato {
+    color: rgb(250, 249, 253);
+    background-color: rgb(1, 22, 253);
+    border-radius: 5px;
+    border: none;
+    width: 230px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+main button.contato:hover {
+    background-color: rgb(49, 49, 248);
+    border: 2px solid rgb(255, 255, 255);
+    width: 220px;
+
+}
+
+main img.soon1 {
+    width: 300px;
+
+}
+
+
+main img.soon2 {
+
+    width: 600px;
+}
+
+
+main h1 {   
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+main p {
+
+    color: rgb(244, 245, 242);
+    font-size: 35px;
+}
+
+
+
+.video1 {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+}
+
+
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.efeito-video {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 4, 1) 4%, rgba(0, 0, 10, 0) 52%, rgba(5, 0, 0, 1) 100%);
+    position: fixed;
+    top: 0;
+}
+
+
+
+.formulario-faleconosco {
+    background-color: rgb(251, 251, 253);
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: 300px;
+    height: 500px;
+    gap: 50px;
+    flex-direction: column;
+    position: fixed;
+    top: 20%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    padding-left: 5px;
+    outline-color: blue;
+}
+
+textarea {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    padding-left: 5px;
+    outline-color: blue;
+}
+
+.botao-formulario {
+  
+    background-color: blue;
+    font-size: 20px;
+    width: 200px;
+    height: 40px;
+    color: aliceblue;
+    cursor: pointer;
+
+}
+
+
+.botao-formulario:hover {
+
+    background-color: rgb(49, 49, 248);
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+
+.mascara-formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(1, 6, 241, 0.29735644257703087) 0%, rgba(3, 3, 251, 0.3533788515406162) 46%, rgba(4, 4, 251, 0.2861519607843137) 100%);
+
+}
+
+.go-out {
+    width: 30px;
+    margin-top: 100px;
+    margin-right: 350px;
+    cursor: pointer;
+
+}
+
+.go-out:hover {
+    width: 27px;
+    margin-top: 100px;
+    margin-right: 350px;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1400px) {
+
+    header {
+        gap: 100px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1095px) {
+
+
+    header .box-top img {
+        width: 30px;
+    }
+
+    header .box-top img.youtube {
+        width: 37px;
+    }
+
+    header .box-top img.youtube:hover {
+        width: 33px;
+    }
+
+    header .box-top img:hover {
+        width: 27px;
+    }
+
+    main img.soon2 {
+        width: 400px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 925px) {
+
+    header {
+        flex-direction: column;
+        height: 200px;
+        gap: 10px;
+
+    }
+
+    header .menu {
+        height: 100px;
+        margin: 40px 50px 0;
+    }
+
+
+    header .box-top {
+        margin-left: 210px;
+
+    }
+
+    main .box-left {
+        width: 400px;
+    }
+
+    main img.soon1 {
+        width: 200px;
+    }
+
+    main img.soon2 {
+        width: 400px;
+    }
+
+    main h1 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 30px;
+    }
+
+
+    header .box-top img:hover {
+        width: 27px;
+    }
+
+    header .box-top img.youtube:hover {
+        width: 32px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 695px) {
+
+    header {
+        gap: 20px;
+    }
+
+    header .box-top {
+        margin-left: 150px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 680px) {
+
+
+    main .box-left {
+        width: 300px;
+    }
+
+    main img.soon1 {
+        width: 200px;
+    }
+
+    main img.soon2 {
+        width: 250px;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+
+
+}
+
+@media screen and (max-width: 560px) {
+
+
+
+    header .menu a {
+        font-size: 15px;
+    }
+
+    header .box-top {
+        margin-left: 110px;
+
+    }
+
+    main {
+
+        height: 630px;
+        gap: 20px;
+    }
+
+    main .box-left {
+        margin-left: 30px;
+        align-items: center;
+        width: 200px;
+        height: 550px;
+    }
+
+    main img.soon1 {
+        width: 200px;
+    }
+
+    main img.soon2 {
+        width: 200px;
+
+        margin-right: 120px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 515px) {
+
+
+
+
+    main .box-left {
+        margin: 0 25px 0;
+    }
+
+    header {
+        gap: 10px;
+    }
+
+    header .box-top {
+        margin-top: 15px;
+    }
+
+    header .box-top img {
+        width: 20px;
+    }
+
+    header .box-top img.youtube {
+        width: 25px;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header .box-top img.youtube {
+        width: 23px;
+        margin-bottom: 5px;
+    }
+
+    header .menu {
+
+        margin: 10px;
+    }
+
+    header .menu img {
+        width: 70px;
+        height: auto;
+    }
+
+    header .menu a {
+        font-size: 15px;
+
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .box-left p {
+        font-size: 20px;
+    }
+
+    main .box-left {
+        margin-top: 20px;
+        height: 400px;
+        gap: 20px;
+    }
+
+    main img.soon2 {
+        margin-left: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 407px) {
+
+    header .box-top img.youtube {
+        width: 25px;
+
+    }
+
+
+    header .menu {
+        gap: 15px;
+    }
+
+    header .box-top {
+        margin-left: 70px;
+    }
+
+    header {
+
+        height: 160px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 370px) {
+    
+    .go-out {
+        margin-right: 300px;
+    }
+}
