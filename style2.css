@@ -352,6 +352,7 @@ footer .q1 {
 }
 
 footer .q2 img {
+    
     width: 50px;
 }
 
@@ -938,12 +939,16 @@ footer p {
 
         }
 
+        main {
+            height: 400px;
+        }
+
         main .rooms {
-            height: 120px;
+            height: 100px;
         }
 
         main .rooms img {
-            width: 75px;
+            width: 78px;
         }
 
         main .text h3 {
@@ -967,7 +972,7 @@ footer p {
         }
 
         footer .q2 {
-            width: 210px;
+            width: 250px;
             
         }
     }
