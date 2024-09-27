@@ -48,6 +48,7 @@ header .menu {
 }
 
 header .menu img {
+    width: 100px;
     height: 100px;
 
 }
@@ -236,7 +237,7 @@ main .rooms {
     justify-content: center;
     gap: 30px;
     position: relative;
-    background: rgba(0, 0, 0, 0.747);
+    background: rgb(53, 53, 53);
     border-radius: 40px;
     width: 1350px;
     height: 400px;
@@ -244,7 +245,7 @@ main .rooms {
 
 main .rooms img {
     border: 3px solid rgb(0, 46, 253);
-    border-radius: 20px;
+    border-radius: 10px;
     width: 300px;
     height: 300px;
 }
@@ -310,7 +311,6 @@ section.services {
 
 section.services div {
     display: flex;
-    background: rgba(0, 0, 0, 0.747);
     align-items: center;
     justify-content: center;
     height: 400px;
@@ -324,7 +324,7 @@ section.services div {
 section.services img {
     width: 300px;
     height: 300px;
-    border-radius: 20px;
+    border-radius: 8px;
 
 }
 
@@ -396,11 +396,17 @@ footer p {
 
 @media screen and (max-width: 1368px) {
 
+    main .rooms {
+        border-radius: 0;
+    }
+
     main .rooms img {
-        width: 230px;
+        width: 260px;
+        height: 260px;
     }
 
     main .rooms {
+        gap: 10px;
         width: 100%;
         height: 330px;
     }
@@ -466,13 +472,12 @@ footer p {
 
 
     main .rooms img {
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
 
     main .rooms {
-        width: 100%;
-        height: 300px;
+        height: 240px;
     }
 
     footer {
@@ -486,8 +491,8 @@ footer p {
 @media screen and (max-width: 934px) {
 
     main .rooms img {
-        width: 150px;
-        height: 150px;
+        width: 135px;
+        height: 135px;
     }
 
     main .rooms {
@@ -581,12 +586,12 @@ footer p {
     }
 
     main .rooms img {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
     }
 
     main .rooms {
-        width: 670px;
+        
         height: 160px;
     }
 
@@ -629,14 +634,12 @@ footer p {
         width: 40px;
     }
 
-    main .rooms {
-        width: 620px;
-    }
+    
 
 
 }
 
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 647px) {
 
     header {
         gap: 20px;
@@ -664,13 +667,10 @@ footer p {
         width: 30px;
     }
 
-    main .rooms {
-        width: 530px;
-        gap: 10px;
-    }
 
     main .rooms img {
-        width: 120px;
+        width: 130px;
+        height: 130px;
     }
 
     section.services div {
@@ -690,6 +690,17 @@ footer p {
 
 
 }
+
+
+@media screen and (max-width: 577px) {
+
+    main .rooms img {
+        width: 123px;
+        height: 123px;
+    }
+}
+
+
 
 @media screen and (max-width: 560px) {
 
@@ -726,16 +737,6 @@ footer p {
         margin-bottom: 10px;
     }
 
-    main .rooms {
-        width: 100%;
-    }
-
-    main .rooms img {
-        width: 123px;
-        height: 130px;
-
-    }
-
     section.services div img {
         width: 100px;
 
@@ -749,9 +750,10 @@ footer p {
         width: 500px;
     }
 
+
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 542px) {
 
     article #columnscourses {
         width: 450px;
@@ -762,16 +764,21 @@ footer p {
 
     }
 
+    main .rooms {
+        width: ;
+        height: 150px;
+    }
+
     main .rooms img {
-        width: 110px;
-        height: 130px;
+        width: 115px;
+        height: 115px;
     }
 }
 
 
 
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 508px) {
 
 
 
@@ -806,17 +813,19 @@ footer p {
         width: 410px;
     }
 
+
     main .text h3 {
         font-size: 15px;
     }
 
     main .rooms {
+        height: 130px;
         margin: 0;
     }
 
     main .rooms img {
-        width: 103px;
-        height: 120px;
+        width: 110px;
+        height: 110px;
     }
 
 
@@ -848,16 +857,16 @@ footer p {
 
 }
 
-@media screen and (max-width: 465px) {
+@media screen and (max-width: 487px) {
 
     main .rooms img {
-        width: 95px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 }
 
 
-@media screen and (max-width: 442px) {
+@media screen and (max-width: 454px) {
 
     body #text-animation {
         font-size: 12px;
@@ -866,10 +875,15 @@ footer p {
     article #columnscourses {
         width: 380px;
     }
+
+    main .rooms img {
+        width: 95px;
+        height: 95px;
+    }
 }
 
 
-@media screen and (max-width: 417px) {
+@media screen and (max-width: 436px) {
 
     header .menu {
         gap: 12px;
@@ -918,16 +932,18 @@ footer p {
 
     section.services div img {
         width: 80px;
+        height: 80px;
+        border-radius: 5px;
 
     }
 
     main .rooms {
-        height: 110px;
+        height: 88px;
     }
 
     main .rooms img {
-        width: 83px;
-        height: 100px;
+        width: 85px;
+        height: 85px;
     }
 }
 
@@ -970,15 +986,18 @@ footer p {
     }
 
     main {
+        
         height: 400px;
     }
 
     main .rooms {
+        gap: 8px;
         height: 100px;
     }
 
     main .rooms img {
         width: 78px;
+        height: 78px;
     }
 
     main .text h3 {
@@ -999,6 +1018,10 @@ footer p {
     section.services div img {
         width: 75px;
 
+    }
+
+    footer .q1 {
+        width: 300px;
     }
 
     footer .q2 {
@@ -1035,9 +1058,9 @@ footer p {
 
 
     main .rooms img {
-        width: 70px;
+        width: 77px;
+        height: 77px;
 
     }
-
 
 }

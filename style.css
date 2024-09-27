@@ -454,7 +454,7 @@ textarea {
     }
 
     header .box-top img {
-        width: 20px;
+        width: 22px;
     }
 
     header .box-top img.youtube {
@@ -468,22 +468,25 @@ textarea {
 
 @media screen and (max-width: 482px) {
 
+    header {
+        height: 180px;
+    }
+
 
     header .menu img.icon {
         width: 20px;
     }
 
     header .box-top img.youtube {
-        width: 32px;
-        margin-bottom: 2px;
+        width: 34px;
+        
     }
 
     header .box-top img {
-        width: 26px;
+        width: 27px;
     }
 
     header .menu {
-
         margin: 10px;
     }
 
@@ -522,8 +525,6 @@ textarea {
 
 
 @media screen and (max-width: 407px) {
-
-  
 
 
     header .menu {
