@@ -77,17 +77,6 @@ header .box-top img:hover {
     width: 47px;
 }
 
-header .box-top img.youtube {
-    width: 60px;
-    margin-bottom: 5px;
-    cursor: pointer;
-}
-
-header .box-top img.youtube:hover {
-    width: 68px;
-}
-
-
 
 
 
@@ -272,7 +261,11 @@ textarea {
 @media screen and (max-width: 1400px) {
 
     header {
-        gap: 100px;
+        gap: 350px;
+    }
+
+    header .box-top {
+        margin-right: 10px;
     }
 
 }
@@ -283,16 +276,12 @@ textarea {
 @media screen and (max-width: 1095px) {
 
 
+    header {
+        gap: 200px;
+    }
+
     header .box-top img {
         width: 30px;
-    }
-
-    header .box-top img.youtube {
-        width: 37px;
-    }
-
-    header .box-top img.youtube:hover {
-        width: 33px;
     }
 
     header .box-top img:hover {
@@ -311,21 +300,11 @@ textarea {
 
     header {
         flex-direction: column;
-        height: 200px;
-        gap: 10px;
-
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
 
-    header .menu {
-        height: 100px;
-        margin: 40px 50px 0;
-    }
-
-
-    header .box-top {
-        margin-left: 210px;
-
-    }
 
     main .box-left {
         width: 400px;
@@ -352,26 +331,10 @@ textarea {
         width: 27px;
     }
 
-    header .box-top img.youtube:hover {
-        width: 32px;
-    }
-
+    
 
 }
 
-
-@media screen and (max-width: 695px) {
-
-    header {
-        gap: 20px;
-    }
-
-    header .box-top {
-        margin-left: 150px;
-    }
-
-
-}
 
 
 @media screen and (max-width: 680px) {
@@ -404,10 +367,6 @@ textarea {
         font-size: 15px;
     }
 
-    header .box-top {
-        margin-left: 110px;
-
-    }
 
     main {
 
@@ -438,57 +397,22 @@ textarea {
 
 @media screen and (max-width: 515px) {
 
-
-
-
     main .box-left {
         margin: 0 25px 0;
     }
-
-    header {
-        gap: 10px;
-    }
-
-    header .box-top {
-        margin-top: 15px;
-    }
-
-    header .box-top img {
-        width: 22px;
-    }
-
-    header .box-top img.youtube {
-        width: 25px;
-
-    }
-
-
 }
 
 
 @media screen and (max-width: 482px) {
 
-    header {
-        height: 180px;
-    }
+
+
 
 
     header .menu img.icon {
         width: 20px;
     }
 
-    header .box-top img.youtube {
-        width: 34px;
-        
-    }
-
-    header .box-top img {
-        width: 27px;
-    }
-
-    header .menu {
-        margin: 10px;
-    }
 
     header .menu img {
         width: 70px;
@@ -526,22 +450,13 @@ textarea {
 
 @media screen and (max-width: 407px) {
 
+    header {
+        gap: 15px;
+    }
 
     header .menu {
         gap: 15px;
     }
-
-    header .box-top {
-        margin-left: 70px;
-    }
-
-    header {
-
-        height: 160px;
-    }
-
-
-
 }
 
 @media screen and (max-width: 370px) {
